@@ -6,11 +6,7 @@ const Canvas = props => {
   const [matrix, setMatrix] = useState(
     Array(30)
       .fill()
-      .map(() =>
-        Array(30)
-          .fill()
-          .map(() => 0)
-      )
+      .map(() => Array(30).fill(0))
   )
 
   const changeColor = (rowIndex, colIndex) => {
